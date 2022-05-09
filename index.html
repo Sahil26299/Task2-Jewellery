@@ -45,269 +45,9 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"></script>
+    <link rel="stylesheet" href="/index_style.css">
     </head>
 
-    <style>
-        #header_icons {
-            color: white;
-            padding: 0 5px;
-        }
-
-        #brand_img {
-            width: 200px;
-        }
-
-        #navbarSupportedContent {
-            padding-left: 350px;
-        }
-
-        #navbarDropdown {
-            color: white;
-            font-family: auto;
-        }
-
-        #navbarDropdown:hover {
-            color: #FCD462;
-        }
-
-        .nav-link {
-            margin-right: 35px;
-        }
-
-        #nav_icon:hover {
-            background-color: #FCD462;
-        }
-
-        #header_link {
-            text-decoration: none;
-            color: white;
-            padding: 0 5px;
-        }
-
-        #header_icons:hover,
-        #header_link:hover {
-            color: #FCD462;
-        }
-
-        #slide1-1 {
-            border: 2px solid #FCD462;
-            padding: 15px 40px;
-            text-decoration: none;
-            color: #212529;
-            background-color: #FCD462;
-            font-family: 'Kanit', sans-serif;
-            font-weight: 600;
-            transition: font-size 0.5s;
-        }
-
-        #slide1-1:hover {
-            background-color: #212529;
-            color: #FCD462;
-            font-size: 18px;
-        }
-
-        #slide1-2 {
-            border: 2px solid rgba(128, 128, 128, 0.35);
-            padding: 15px 40px;
-            text-decoration: none;
-            color: rgb(176, 176, 176);
-            font-family: 'Kanit', sans-serif;
-            font-weight: 600;
-            transition: font-size 0.5s;
-        }
-
-        #slide1-2:hover {
-            background-color: #FCD462;
-            color: #212529;
-            border: 2px solid #FCD462;
-            font-size: 18px;
-        }
-
-        #ornaments:hover {
-            background-color: #1414139a;
-        }
-
-        #orn_hover {
-            padding: 15px;
-            font-size: 50px;
-        }
-
-        #lady3 {
-            width: 250px;
-        }
-
-        #lady4 {
-            width: 250px;
-            position: absolute;
-            top: -25px
-        }
-
-        #gradient {
-            background-image: url(/woman\ wearing\ a\ necklace.jpeg);
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 100%), url(/woman\ wearing\ a\ necklace.jpeg);
-            background-position: center;
-            background-size: cover;
-            width: 950px;
-            height: 680px;
-        }
-
-        #shop .far {
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-
-        #shop {
-            text-decoration: none;
-            text-align: center;
-        }
-
-        #shop:hover .far {
-            opacity: 1;
-        }
-
-        #images_4 {
-            background-image: url(/wearing\ necklace.jpeg);
-            background-size: cover;
-            height: 400px;
-            width: 400px;
-            position: relative;
-            z-index: 0;
-        }
-
-        #images_4_child {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            z-index: 2;
-            color: white;
-            font-family: auto;
-        }
-
-        .mask {
-            background-size: cover;
-            position: absolute;
-            background-position: 50%;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            opacity: .5;
-            z-index: -1;
-        }
-
-        #products {
-            border: 2px solid #FCD462;
-            text-decoration: none;
-            color: white;
-            padding: 15px 40px;
-            font-family: 'Kanit', sans-serif;
-            font-weight: 600;
-            transition: border 0.5s, color 0.5s;
-        }
-
-        #col3 {
-            transition: background-color 0.5s;
-        }
-
-        #images_4 {
-            opacity: 0.5;
-            position: relative;
-            width: 100%;
-            height: 460px;
-            transition: opacity 0.5s;
-        }
-
-        #images_4_h2 {
-            font-family: auto;
-            color: white;
-            font-size: 40px;
-            transition: color 0.5s;
-        }
-
-        #images_4_p {
-            padding-bottom: 85px;
-            color: black;
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-
-        #col3:hover {
-            background-color: #FCD462;
-        }
-
-        #products:hover #images_4 {
-            opacity: 0.1;
-        }
-
-        #col3:hover #images_4_h2 {
-            color: black;
-        }
-
-        #col3:hover #products {
-            color: black;
-            border: 2px solid black;
-        }
-
-        #col3:hover #images_4_p {
-            opacity: 1;
-        }
-
-        #images_4:hover {
-            opacity: 0.1;
-        }
-
-        #rare_collections {
-            padding: 8rem 20rem;
-            background-image: url('/bg\ image.png');
-            background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%), url('/bg\ image.png');
-        }
-
-        #button_rare {
-            border: 2px solid #FCD462;
-            padding: 15px 40px;
-            text-decoration: none;
-            color: #212529;
-            background-color: #FCD462;
-            font-family: 'Kanit', sans-serif;
-            font-weight: 600;
-            transition: color 0.5s, background-color 0.5s;
-        }
-
-        #button_rare:hover {
-            color: white;
-            background-color: #e2ba4c;
-        }
-
-        #card_slider1_icon {
-            opacity: 0;
-            transition: opacity 0.5s, background-color 0.5s, color 0.5s;
-        }
-
-        #card_slider1_arrow {
-            opacity: 0;
-            transition: opacity 0.5s;
-        }
-
-        #card_slider1:hover #card_slider1_icon,
-        #card_slider1:hover #card_slider1_arrow {
-            opacity: 1;
-        }
-
-        #card_slider1_icon:hover {
-            background-color: #FCD462 !important;
-            color: #353530 !important;
-        }
-        #img_3_a{
-            text-decoration: none;
-        }
-        #img_3_heading{
-            transition: color 0.5s;
-        }
-        #img_3_a:hover #img_3_heading{
-            color: #FCD462 !important;
-        }
-    </style>
 
 <body class="bg-dark">
     <header class="site-header">
@@ -974,7 +714,7 @@
                                                                 -18.6%</p>
                                                         </span>
                                                         <table
-                                                            style="background-color: #262626; position: absolute; bottom: 105px; width: 50px;">
+                                                            style="background-color: #262626; position: absolute; bottom: 121px; width: 50px;">
                                                             <tr>
                                                                 <td style="padding-left: 10px;"><i class="fas fa-star"
                                                                         style="color: #FCD462; background-color: rgba(0, 0, 0, 0);"></i>
@@ -1114,7 +854,7 @@
         </div>
     </div>
 
-    <div class="container-fluid" style="background-color: #353530; padding: 0 550px 100px;">
+    <div class="container-fluid" style="background-color: #353530;">
         <div class="row">
             <div class="col-lg-6 mx-auto">
                 <table style="margin: 25px auto;">
@@ -1130,8 +870,11 @@
                 </table>
             </div>
         </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #353530; padding: 0 550px 100px;">
         <div class="row">
-            <div class="col-lg-6 text-center mx-auto">
+            <div class="col-lg-6 text-center mx-auto" style="width: 880px;">
                 <p style="color: rgb(176, 176, 176); font-size: 15px; font-family: 'Kanit', sans-serif; font-weight: 700; margin-bottom: 10px;">
                     MAY BE YOU HAVE EARNED IT</p>
                 <h2 style="color: white; font-size: 80px; font-family: auto; line-height: 100px; margin-bottom: 25px; line-height: 80px;">
@@ -1139,15 +882,33 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6 bg-image hover-zoom" style="width: 390px; height: 500px;">
-                <img src="/lady_anklets.jpeg" class="w-100"/>
+            <div class="col-lg-6 bg-image hover-zoom" id="big_2small" style="width: 400px; height: 550px; padding: 0px; margin-right: 30px;">
+                <a href="">
+                    <img src="/lady_anklets.jpeg" class="w-100" width="100%">
+                    <span>
+                        <h1 id="big_2small_h1_1">Anklets</h1>
+                        <p id="big_2small_p_1">Lorem ipsum dolor sit amet consectetur.</p>
+                    </span>
+                </a>
             </div>
-            <div class="col-lg-6" style="width: 390px; height: 500px;">
-                <div class="bg-image hover-zoom" style="width: 380px;">
-                    <img src="/earrings_on_ground.jpeg" class="w-10" />
+            <div class="col-lg-6" id="big_2small" style="width: 390px; height: 550px; padding: 0px; position: relative;">
+                <div class="bg-image hover-zoom" style="width: 400px; height: 260px;">
+                    <a href="">
+                        <img src="/earrings_on_ground.jpeg" class="w-10" width="100%" style="position: absolute; bottom:-15px">
+                        <span>
+                            <h1 id="big_2small_h1_2">Anklets</h1>
+                            <p id="big_2small_p_2">Lorem ipsum dolor sit amet consectetur.</p>
+                        </span>
+                    </a>   
                 </div>
-                <div class="bg-image hover-zoom" style="width: 380px;">
-                    <img src="/necklace_on_model.jpeg" class="w-100" />
+                <div class="bg-image hover-zoom" style="width: 400px; height: 260px; margin-top: 30px;">
+                    <a href="">
+                        <img src="/necklace_on_model.jpeg" class="w-100" width="100%"/>
+                        <span>
+                            <h1 id="big_2small_h1_3">Anklets</h1>
+                            <p id="big_2small_p_3">Lorem ipsum dolor sit amet consectetur.</p>
+                        </span>
+                    </a>  
                 </div>
             </div>
         </div>
